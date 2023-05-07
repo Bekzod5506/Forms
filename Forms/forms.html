@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input{ border-color: black;
+            border-radius: 6px;
+            background-color: rgb(200, 226, 226);}
+            form{
+                background-color: greenyellow;
+                text-align: center;
+            float: left; 
+                   margin: 165px 0 0 350px;
+                   border: solid black;
+                   border-radius: 16px;
+            }
+                .d1{
+                    float: left; 
+                    padding: 50px;
+                }
+                .d2{
+                    float: left;
+                    padding: 50px;
+                }
+                label{
+                    font-family: sans-serif;
+                }
+                button{
+                    background-color: brown;
+                    
+                }
+                input::placeholder{padding: 3px;}
+    </style>
+</head>
+<body>
+    <form action="/server.php" method="GET">
+        <h1>Registration</h1>
+        <div class="d1"><label for="#">Username</label>
+        <input type="text" placeholder="Your username"> <br><br>
+        <label for="#">First name</label>
+        <input type="text" placeholder="Write your name"><br><br>
+        <label for="#">Email</label>
+        <input type="email" placeholder="Enter your email"><br><br>
+        <label for="#">Password</label>
+        <input type="password" placeholder="Your password"><br><br>
+        <label for="#">Age</label>
+        <input type="number" placeholder="Your age"> <br><br>
+        <label for="#">Your qualification</label>
+        <select>
+            <option value="0">A year</option>
+            <option value="1">2 years</option>
+            <option value="2">3 years</option>
+            <option value="3">More than 3 years</option>
+        </select> </div>
+        <div class="d2"><label for="#">Passport</label>
+        <input type="file"><br><br>
+        <label for="#">Male</label>
+        <input type="radio" name="gender">
+        <label for="#">Female</label>
+        <input type="radio" name="gender"><br><br>
+        <label for="#">Certificate</label>
+        <input type="checkbox"><br><br>
+        <label for="#">Birth date</label>
+        <input type="date"> <br><br>
+        <label for="#">About you</label><br>
+        <textarea rows="5" cols="19"></textarea><br><br>
+        <button>Register</button> </div>
+
+    </form>
+</body>
+</html>
